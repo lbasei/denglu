@@ -1,0 +1,241 @@
+# 标签**
+
+<标签头> <\标签尾>
+
+标签类型冲突时以第一个标签类型定义为准。
+
+<标签名 属性名=“属性值”属性名=“属性值”>
+
+上述定义可以写在起始标签或者单标签里。
+
+<marquee>循环属性名，loop=“1”循环一次属性值
+
+名字要一模一样，bgcolor背景色，input加bgcolor也没有背景色 type=“password”输入框内会被隐藏
+
+通用属性谁都能写
+
+浏览器会检查代码再渲染，head里面不能写呈现类标签。
+
+<!--注释-->注释不会出现再网页里（浏览器自动忽略）
+
+注释里面不能套注释（尽量避免
+
+DOCTYPE说明文档类型html5（简介好用）
+
+ASCII码
+
+存储和解码编码要相同
+
+lang=“en(英语) zh（中文）-地区”在html里
+
+.ico设置网页图标。
+
+<mata charset="UTF-8">不用标签尾。
+
+h1和h2不能嵌套
+
+
+P标签里不能有h1-h6，p，div标签没有语义
+
+标签化有利于SEO（搜索引擎优化）,代码清晰，可读性强。
+
+块级元素独占一行
+
+行级元素不独占一行
+
+块级元素内几乎啥都能写
+
+行内元素不能写块元素
+
+P标签（段落）中不能写块元素
+
+效果比语义更重要
+
+em 着重阅读内容
+
+strong 十分重要的内容
+
+span 没有语义
+
+src是图片路径 alt是图片描述 width 宽度  height 高度 单位是像素
+
+# 路径
+
+./ 同级路径（可省略）
+
+/ 下一级路径
+
+../ 上一级路径
+
+# 常见图片格式
+
+jpg png bmg gif webp base64
+
+# 超链接
+
+href 要跳转的具体位置
+
+target 跳转时如何打开页面
+
+_self 在本页打开
+
+_blank 在新页面打开
+
+用download属性可以强制下载
+
+a标签
+
+href属性的a标签是超链接 name属性的a标签是锚点 name和id区分大小写，最好别以数字开头。
+
+<a href="#">回到顶部
+
+<a href="">刷新页面
+
+<a href="javascript:alert(1);">弹窗
+
+<a href="tel:电话号码">
+
+<a href="mailto:邮箱号码">
+
+<a href="sms:短信号码">
+
+# 列表
+
+有序列表<o><li></li></o>
+
+无序列表<u></u>
+
+自定义列表 dl是自定义列表 dt是术语名称 dd是术语描述
+
+子元素最好统一如都用<li></li>
+
+<li>最好不要单独使用
+
+列表可以嵌套（尽量把结构搞清楚）
+
+# 表格
+
+## 表格table 
+
+border="1（像素数）"表格边框（外部）width表格宽度height高度
+
+cellspacing单元格间距
+
+thead表格头部 能加height属性，align属性（水平对齐方式）如right（右对齐）默认水平
+
+caption表格标题
+
+tbody表格主体 height属性
+
+tfoot表格脚注
+
+tr行 colspan跨列 rowspan跨行
+
+td（主题），th（头）单元格  align属性
+
+height属性以表格定义为主
+
+br换行 hr分隔（一条线）pre按原文显示（如果没有空格回车会忽略）
+
+# 表单
+
+target属性跳转方式_self  _blank
+
+form标签表单 action="网址/search" target（打开方式） method（方式 分get和post）
+
+button按钮
+
+input 输入 type：输入类型 name：输入值的名称 value：输入默认值 maxlength：最大输入数量
+
+复选按钮input的text属性是radio name值设置一样 value最好给个默认值 后加checked默认选择 
+
+type属性填hidden隐藏输入框
+
+type属性填from
+
+type属性填submit 提交 value属性决定按钮里的文字 别写name属性
+
+input type写checkbox属性是复选框
+
+button type属性写reset重置
+
+input type写reset也可以重置
+
+button类型type写button就是一个普通按钮
+
+input内加disabled不能修改默认值
+
+label标签for属性用来关联标签和其他标签id关联
+
+或者直接把标签放在label里做关联
+
+id 属性用于唯一标识HTML元素，可以在JavaScript中操作元素、应用样式和创建锚点链接。 name 属性用于命名HTML元素，用于提交表单和对选择框和单选按钮进行分组。
+
+fieldset可以为表单控件分组，legend是分组的标题
+
+提交必须有name和value
+
+option属性selected默认选中
+
+button：submit（默认），reset，button
+
+# 表格
+
+textarea标签 cols列数 rows行数 name属性（没有text属性）
+
+select选择栏 option（选项标签）option属性可以加value（会呈现在url里）
+
+# 框架结构
+
+iframe框架标签
+
+<iframe src="https://www.toutiao.com" width="90" height="30" frameborder></iframe>
+
+代码示例↑
+
+嵌入网页图片音乐等
+
+# 字符实体
+
+（&nbsp;或&#160）←空格表示
+
+开始标签后会自动补结束标签
+
+用转义字符代替某些关键字
+
+<bdo dir="ltl">你好
+
+
+<bdo dir="rtl">你好
+
+
+↑代码示例
+
+# meta元信息
+
+网页的基本信息
+
+<meta name="viewport" content="width=device-width", initial-scale="1.0">
+
+
+meta可以配置网页关键字，描述等
+
+noindex不允许爬虫捕获
+
+## name里面的属性
+
+keywords关键字
+
+description描述
+
+robot爬虫
+
+author作者
+
+generator网页生成工具
+
+copyright网页授权信息
+
+## http-equiv里面的属性
+
+refresh自动刷新（content代表秒数 url代表跳转目标）
